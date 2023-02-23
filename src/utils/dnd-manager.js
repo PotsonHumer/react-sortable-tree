@@ -148,6 +148,7 @@ export default class DndManager {
       } catch (e) {
          // FIX: this is a temporary fix because the above code sometimes throws an exception. An issue has been raised
         // with the original project https://github.com/fritz-c/react-sortable-tree/issues/259.
+        return false;
       }
 
       return this.customCanDrop({
